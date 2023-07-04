@@ -3,11 +3,14 @@ let contactList = [];
 
 // fungsi untuk menambahkan kontak baru ke daftar kontak
 function addContact(name, email, phone) {
+    // membuat objek contact dengan properti name, email, dan phone
+    // properti diinisialisasi dengan nilai dari parameter yang diterima oleh fungsi
     let contact = {
         name,
         email,
         phone
     };
+    // menambakan objek kontak ke dalam array contactList
     contactList.push(contact);
 }
 
@@ -36,7 +39,7 @@ addContact("Achmad Adyatma Ardi", "achmad@example.com", "1234");
 addContact("Qonita Dwi Wulandari", "qonita@example.com", "4321");
 
 // menampilkan daftar kontak
-// showContactList();
+showContactList();
 
 // menghapus kontak dengan indeks 1
 deleteContact(1);
